@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Bailarines Details{% endblock %}
+{% block content %}
+<h3><center><span class="label label-info"><FONT FACE="arial">Bailarines Details</FONT></span></center></h3>
+<br>
+	<form action="/ingresar/" method="post">
+	{% csrf_token %}
+	<input name="bailarines_input" id="bailarines_input" type="text"/>
+	<button type="submit">Buscar</button>
+</form>	
+		
+	
+{% endblock %}

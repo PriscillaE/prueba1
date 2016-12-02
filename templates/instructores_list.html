@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load tags %}
+{% block title %}List of Intructores{% endblock %}
+{% block content %}
+<h3><center><span class="label label-info"><FONT FACE="arial">Instructores List</FONT></span></center></h3>
+<br>
+	{% for item in list %}
+	<FONT FACE="Century Schoolbook L">
+	<span class="col-md-4 col-sm-offset-4" enctype="multipart/form-data">
+		<h4>Nombre: {{ item.nombre}}</h4>
+		<h4>Apellido Paterno:  {{ item.apellido_paterno}}</h4>
+		<h4>Apellido Materno:  {{ item.apellido_materno}}</h4>
+		<h4>Edad:  {{ item.edad}} </h4>
+		<h4>Especialidad:  {{ item.especialidad}} </h4>
+		<h4>Horario Trabajo:  {{ item.horario_trabajo}}</h4></FONT>
+		<h6><center>_____________________________________________________________________________</center></h6>
+		<br>
+		</span>
+		
+	{% endfor %}
+{% firstTAG %}
+{{ BAILARINES_ITEMS}}
+{% endblock %}

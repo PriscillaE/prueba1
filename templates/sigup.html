@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+	Sigup
+{% endblock %}
+{% block content %}
+
+	<form class="col-md-4 col-sm-offset-4" method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<center><input type="submit" class="btn btn-primary btn-lg" value="Register">
+		<input type="reset" class="btn btn-warning btn-lg" value="Cancel"></center>
+	</form>
+{% endblock %}

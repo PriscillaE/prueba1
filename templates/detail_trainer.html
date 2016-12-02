@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Update{% endblock %}
+{% block content %}
+<h3><center><span class="label label-info"><FONT FACE="arial">Trainer</FONT></span></center></h3>
+<br>
+<ul class="list-group">
+  <li class="list-group-item list-group-item-success">{{ object.nombre }} </li>
+  <li class="list-group-item list-group-item-info">{{ object.especialidad}}</li>
+  <li class="list-group-item list-group-item-warning">{{ object.horario_trabajo }} </li>
+</ul>
+  
+  <li>
+    {% for item in object.bailarin.all %}
+    <ul class="list-group">
+     <li class="list-group-item list-group-item-danger">{{ item.nombre_bailarin }}</li>
+     </ul>
+
+    {% endfor %}
+  </li>
+
+
+
+
+
+
+
+{% endblock %}

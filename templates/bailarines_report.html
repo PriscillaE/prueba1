@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Update{% endblock %}
+{% block content %}
+<h3><center><span class="label label-info"><FONT FACE="arial">Update</FONT></span></center></h3>
+<br>
+	<table>
+		{% for item in object_list %}
+		<tr>
+		<td>{{item.nombre_bailarin}}</td>
+		<td>{{item.apellido_paterno_bailarin}}</td>
+		<td>{{item.curso}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+{% endblock %}
+

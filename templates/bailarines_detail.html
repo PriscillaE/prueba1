@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Bailarines Details{% endblock %}
+{% block content %}
+<h3><center><span class="label label-info"><FONT FACE="arial">Bailarines Details</FONT></span></center></h3>
+<br>
+	
+		<li>{{object.nombre_bailarin}}</li>
+		<li>{{object.apellido_paterno_bailarin}}</li>
+		<li>{{object.apellido_materno}}</li>
+		<li>{{object.edad_bailarin}}</li>
+		<li>{{object.curso}}</li>
+		<li>{{object.horario_ensayo}}</li>
+		
+	
+{% endblock %}
